@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WhatsApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="overlay.css">
+  <link rel="stylesheet" type="text/css" href="dusto.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row content no-gutters">
+    <div class="col">
+      <div class="profrow" id="top">
+  <div class="col col-md-6 "><span style="font-size:3vw;cursor:pointer" onclick="openNav()">
+      <div class="heading-avatar heading-avatar-icon">
+          <img src="me.jpg" >
+        </div>  
+
+  <!-- <img src="me.jpg" alt="dp" class="dp rounded-circle img-fluid"--></span></div>
+  <div class="col col-md-2 col-sm-2 heading-avatar heading-avatar-icon"><img src="status.png" alt="status" class="status rounded-circle img-fluid" data-toggle="tooltip" data-placement="bottom" title="status"></div>
+  <div class="col col-md-2 col-sm-2"> <a href="#wallpaper"> <img src="chat_white.png" alt="chat" class="chat rounded-circle img-fluid" data-toggle="tooltip" data-placement="bottom" title="chats" onclick="myFunction()">  <a/>
+  </div>
+  <div class="col col-md-2 col-sm-2"><i class="pt-2 menu glyphicon glyphicon-option-vertical" style="font-size:20px;" data-toggle="tooltip" data-placement="bottom" title="Menu"></i></div>
+</div>
+      <!-- Dropdown Menu -->
+  <div class="dropdown_menu">
+    <p class="dropdown_item">New group</p>
+    <p class="dropdown_item">Profile</p>
+    <p class="dropdown_item">Archieved</p>
+    <p class="dropdown_item">Starred</p>
+    <p class="dropdown_item">Settings</p>
+    <p class="dropdown_item">Log out</p>
+  </div>
+        <div class="searchbox px-2 py-3 border border-white bg-light" >
+          <div class="input-group">
+            <span class="input-group-btn">
+          <button class="btn btn-default " type="button">
+            <span class="glyphicon glyphicon-search searchbox "></span>
+          </button>
+        </span>
+        <input type="text" class="form-control" placeholder="Search or start new chat">
+        
+      </div>
+
+    </div>
+           <div class="messages_section">
+
+      <div class="single_chat"><a href="#conversation"> </a>
+        <div class="image_container">
+          <img src="chat1.jpg">
+        </div>  
+
+        <div class="content_container" onclick="myFunction()"> 
+          <div class="content_container_inner">
+            <p class="user_name"><name>Peter</name> <span>11:45 AM</span></p>
+            <p class="chat_content">Yeah man, let's meet up at... <span>3</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat2.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Harry</name> <span>1:45 AM</span></p>
+            <p class="chat_content">Hello my name is Harry and I... <span>1</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat3.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Ellie</name> <span>11:21 AM</span></p>
+            <p class="chat_content">Sorry I didn't see your message ar...<span>1</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat4.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Alfie</name> <span>7:23 AM</span></p>
+            <p class="chat_content">Hey did you catch the game lastni... <span>3</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat5.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Imani</name> <span class="read">YESTERDAY</span></p>
+            <p class="chat_content">Where are you? We are at the...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat6.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Charlie</name> <span class="read">TUESDAY</span></p>
+            <p class="chat_content">Don't forget my charger from your hous..</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat7.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Xing</name> <span class="read">TUESDAY</span></p>
+            <p class="chat_content">Did I leave my laptop at your house on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat8.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Martin</name> <span class="read">MONDAY</span></p>
+            <p class="chat_content">I guess hahaha so when are yo...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="single_chat">
+        <div class="image_container">
+          <img src="chat9.jpg">
+        </div>  
+
+        <div class="content_container">
+          <div class="content_container_inner">
+            <p class="user_name"><name>Frank</name> <span class="read">SATURDAY</span></p>
+            <p class="chat_content">Well to be frank about it I th...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="col-lg-8 bg-rs" id="wallpaper">  
+          <div class="conversation col" id="convo" style="display: none" >
+      <div class="row heading"> 
+        <div class="col-sm-2 col-md-1 col-xs-3 heading-avatar">
+          <div class="heading-avatar-icon">
+            <img src="chat1.jpg">
+          </div>
+        </div>
+        <div class="col-sm-8 col-xs-7 heading-name">
+          <a class="heading-name-meta">Peter
+          </a>
+          <span class="heading-online">Online</span>
+        </div>
+      </div>
+
+      <div class="row message" id="conversation">
+        <div class="message-previous">
+          <div class="col-sm-12 previous">     
+            Show Previous Message!
+          </div>  
+        </div>
+        
+    <div class="container">
+  <div class="row ">
+    <div class="col ">
+      <div class=" message-main-receiver">
+            <div class="receiver">
+              <div class="message-text">
+               Hi, what are you doing?!Hi, what are you doing?!Hi, what are you doing?!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+ 
+    <div class="col-6 col-md-10 message-main-sender">
+            <div class="sender">
+              <div class="message-text">
+                I am doing nothing man! I am doing nothing man! I am doing nothing man!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+  </div>
+  
+  <div class="row justify-content-start">
+    <div class="col">
+      <div class=" message-main-receiver">
+            <div class="receiver">
+              <div class="message-text">
+               Hi, what are you doing?!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+ 
+    <div class="col-6 col-md-10 message-main-sender">
+            <div class="sender">
+              <div class="message-text">
+                I am doing nothing man!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+  </div>
+  
+  
+  
+  <div class="row ">
+    <div class="col ">
+      <div class=" message-main-receiver">
+            <div class="receiver">
+              <div class="message-text">
+               Hi, what are you doing?!Hi, what are you doing?!Hi, what are you doing?!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+ 
+    <div class="col-6 col-md-10 message-main-sender">
+            <div class="sender">
+              <div class="message-text">
+                I am doing nothing man! I am doing nothing man! I am doing nothing man!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+  </div>
+  
+  <div class="row justify-content-start">
+    <div class="col">
+      <div class=" message-main-receiver">
+            <div class="receiver">
+              <div class="message-text">
+               Hi, what are you doing?!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+ 
+    <div class="col-6 col-md-10 message-main-sender">
+            <div class="sender">
+              <div class="message-text">
+                I am doing nothing man!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+  </div>
+  
+  <div class="row justify-content-start">
+    <div class="col">
+      <div class=" message-main-receiver">
+            <div class="receiver">
+              <div class="message-text">
+               Hi, what are you doing?!
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+ 
+    <div class="col-6 col-md-10 message-main-sender">
+            <div class="sender">
+              <div class="message-text">
+                I am doing nothing man! :)
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+  </div>
+</div>
+        
+      </div>
+
+      <div class="row reply">
+        <div class="col-sm-1 col-xs-1 reply-emojis">
+          <i class="fa fa-smile-o fa-2x"></i>
+        </div>
+        <div class="col-sm-9 col-xs-9 reply-main">
+          <textarea class="form-control" rows="1" id="comment"></textarea>
+        </div>
+        <div class="col-sm-1 col-xs-1 reply-recording">
+          <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="col-sm-1 col-xs-1 reply-send">
+          <i class="fa fa-send fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+              
+
+    </div>
+</div>
+</div>
+
+<!-- Overlay Menu-->
+<div id="mySidenav" class="sidenav">
+  <div class="profile">
+  <a href="javascript:void(0)"  onclick="closeNav()">
+    <span>
+    <img src="back.png" alt="back" class="back"><text class="center">Profile</text></span>
+  </a>
+  </div>
+
+<!-- Change DP -->
+   <div class="dispic">
+    <img src="me.jpg" alt="cdp" class="dpcust rounded-circle">
+       <div class="middle">
+        <img src="camera.png" alt="status" class="dpchg rounded-circle">
+      <div class="text">Change Profile Photo</div>
+     </div>
+   </div>
+       
+       <div class="dropdown_menu1">
+    <p class="dropdown_item1">View photo</p>
+    <p class="dropdown_item1">Take photo</p>
+    <p class="dropdown_item1">Upload photo</p>
+    <p class="dropdown_item1">Remove photo</p>
+  </div>  
+
+ <div class="nameEdit">
+  <div class="py-3 neText">Your Name</div>
+  <div class="searchbox px-2 py-3 border-0" >
+          <div class="input-group order-0">
+        <input type="text" class="form-control order-0" placeholder="Anurag Mishra">
+         <span class="input-group-btn">
+          <button class="btn btn-default order-0 " type="button">
+            <span ><img src="edit.png" alt="status" class="edit rounded-circle img-fluid"></span>
+          </button>
+        </span>
+        
+      </div>
+
+    </div>
+
+
+</div>
+  <a href="#">This is not your username or pin.This name will be visible to 
+     your whatsapp contacts.
+  </a>
+  <div class="nameEdit">
+  <div class="py-3 neText">About</div>
+  <div class="searchbox px-2 py-3 border-0" >
+          <div class="input-group order-0">
+        <input type="text" class="form-control order-0" placeholder="Available">
+         <span class="input-group-btn">
+          <button class="btn btn-default order-0 " type="button">
+            <span ><img src="edit.png" alt="status" class="edit rounded-circle img-fluid"></span>
+          </button>
+        </span>
+        
+      </div>
+
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+// CODE TO ENABLE and Hide MENU
+  $('.menu').click(function(){
+    $('.dropdown_menu').animate({width: '180px', height: '310px', opacity: 1}, 400);
+  });
+
+  $('*').click(function(e){
+    if($('.dropdown_menu').height() > 100){
+      if($(e.target).attr('class') != 'dropdown_menu' || $(e.target).attr('class') != 'dropdown_item'){
+        $('.dropdown_menu').animate({width: '0px', height: '0px', opacity: 0}, 400);
+      }
+    }
+  });
+
+  //Code for overlay menu
+  function openNav() {
+   
+          if ($(window).width() < 990) {
+    document.getElementById("mySidenav").style.width = "100%";
+           }
+      else {
+   document.getElementById("mySidenav").style.width = "33vw";
+         }
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// CODE TO ENABLE and Hide overlay
+  $('.dpchg').click(function(){
+    $('.dropdown_menu1').animate({width: '180px', height: '210px', opacity: 1}, 400);
+  });
+
+  $('*').click(function(e){
+    if($('.dropdown_menu1').height() > 100){
+      if($(e.target).attr('class') != 'dropdown_menu1' || $(e.target).attr('class') != 'dropdown_item1'){
+        $('.dropdown_menu1').animate({width: '0px', height: '0px', opacity: 0}, 400);
+      }
+    }
+  });
+
+  function myFunction() {
+    var x = document.getElementById("convo");
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
+
+
+</script>
+</html>
